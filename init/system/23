@@ -1,0 +1,10 @@
+Version graphique : 
+-Bouton shutdown en haut a droite
+-cliquer sur utilisateur actuel
+-changer d'utilisateur
+
+Version ssh
+-ssh login@`hostname`
+-login etant le nom d'utilisateur
+-hostname peut etre remplacer par l'adresse ip de la machine cible
+

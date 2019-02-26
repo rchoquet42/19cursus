@@ -1,0 +1,2 @@
+ifconfig en0 | grep broadcast | rev | cut -d' ' -f1 | rev
+
