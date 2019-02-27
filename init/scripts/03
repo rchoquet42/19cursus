@@ -1,20 +1,21 @@
-#!/bin/sh
-
-echo $#
-echo $1
+#!/bin/bash
 
 if [ $# -eq  0 ]; then
-	sudo apt-get install eclipse java
-	sudo apt-get install code::blocks c
-	sudo apt-get install pycharm python
-	sudo apt-get install "komodo edit" html css
-	sudo apt-get install geany shell
+	if [[ $EUID != 0 ]]; then
+		echo "Plz run as  root"
+		exit 1
+	fi;
+	apt-get install eclipse
+	apt-get install code::block
+	apt-get install pydev python
+	apt-get install bluefish
+	apt-get install geany
 elif [[ $1 == *".java"* ]]; then
 	eclipse $1
 elif [[ $1 == *".c"* ]]; then
 	code::blocks $1
 elif [[ $1 == *".py"* ]]; then
-	pycharm $1
+	eclipse $1
 elif [[ $1 == *".html"* ]]; then
 	bluefish $1
 elif [[ $1 == *".sh"* ]]; then
