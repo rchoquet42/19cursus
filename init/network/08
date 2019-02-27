@@ -1,4 +1,2 @@
-google -> trouver hebergeur site web
-->topHebergeur.com
-->recherche de slash16.org
--> "slash16.org est heberge par coudfront.net"
+traceroute slash16.org, la derniere passerelle est cloudfront.net
+-> "slash16.org est heberge par cloudfront.net"

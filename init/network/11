@@ -1,3 +1,2 @@
-Les 2 premiers "hops" sont toujours en reseau local car l'adresse IP commence par 10.xxx.xxx.xxx
-la 3eme est : 
-ex-chl-1-ge-0-0-12-0.voo.be (212.68.210.33)
+nat (10.60.1.1)  0.370 ms  0.189 ms  0.175 ms
+est la derniere passerelle sur le reseau local, donc elle fait le lien avec l'exterieur
