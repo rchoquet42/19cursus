@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ $# -eq  0 ]; then
+	if [[ $EUID != 0 ]]; then
+		echo "Plz run as  root"
+		exit 1
+	fi;
+	apt-get install eclipse
+	apt-get install code::block
+	apt-get install pydev python
+	apt-get install bluefish
+	apt-get install geany
+elif [[ $1 == *".java"* ]]; then
+	eclipse $1
+elif [[ $1 == *".c"* ]]; then
+	code::blocks $1
+elif [[ $1 == *".py"* ]]; then
+	eclipse $1
+elif [[ $1 == *".html"* ]]; then
+	bluefish $1
+elif [[ $1 == *".sh"* ]]; then
+	geany $1
+fi ;
